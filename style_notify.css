@@ -1,0 +1,891 @@
+/* style code for login.html */
+body.loginpage{
+	background: url("images/low_poly2.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+div.loginBg{
+	width: 500px;
+	height: 400px;
+	text-align: center;
+	background-color: rgba(127, 140, 141, 0.7);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 125px;
+}
+
+div.loginBg img{
+	width: 200px;
+	height: 200px;
+	margin-top: -80px;
+	margin-bottom: 60px;
+}
+
+input[type=text]{
+	background-image: url("images/username.png");
+	background-repeat: no-repeat;
+	background-size: 35px 35px;
+	background-position: center-left;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	height: 40px;
+	width: 300px;
+	background-color: #FFF;
+	margin: 8px 0;
+    display: inline-block;
+    padding: 12px 45px 12px 40px;              /*top-bottom, left-right */
+	border: none;
+    box-sizing: border-box;
+}
+
+input[type=password]{
+	background-image: url("images/password.png");
+	background-repeat: no-repeat;
+	background-size: 35px 35px;
+	background-position: center-left;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	height: 40px;
+	width: 300px;
+	background-color: #FFF;
+	margin: 8px 0;
+    display: inline-block;
+    padding: 12px 45px 12px 40px;              /* top,right,bottom,left */
+	border: none;
+    box-sizing: border-box;
+}
+
+.btn-login{
+	padding: 10px 30px; /* top&bottom 10px ... right&left 30px */
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #2ECC71;
+	border-bottom: 4px solid #27AE60;
+	margin-bottom: 20px;
+}
+
+.btn-login:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+}
+
+/**********************************************************END FOR LOGIN PAGE CSS CODE***********************************************************************/
+
+/* style code for mainpage.html */
+
+body.mainpage{
+	background: url("images/low_poly2.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#div1 h1{
+	float: right;
+	font-size: 50px;
+	font-weight: bold;
+	color: #22313F;
+	margin-right: 10px;
+	margin-top: 0px;
+	
+}
+
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0; /*all four padding*/
+	position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+	display: inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+/*Style for menu links*/
+li a {
+	display: block;
+	min-width: 140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #2c3e50;
+	text-decoration: none;
+}
+
+.active{
+	background: #29B59F;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+	background: #2ecc71;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: #2ecc71;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0px 20px;  /* top&bottom 0px ... right&left 20px */
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-dropmenu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #2ecc71;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*"Welcome Student!" position*/
+h1{
+	color: black;
+	font-size: 55px;
+	text-align: center;
+	margin-top: 120px;
+}
+
+/*"REMINDERS!" position"*/
+#div2 h2{
+	color: #CF000F;
+	font-size: 35px;
+	font-weight: bold;
+	opacity: 2.0;
+	text-align: center;
+}
+
+#div2 h3{
+	color: black;
+	line-height: 10px;
+	font-weight: lighter;
+}
+
+/*green box*/
+#div2{                  
+	background-color: #29B59F;
+	position: absolute;
+	border-radius: 15px;
+	opacity: 0.8;
+	filter: alpha (opacity=80);
+	margin-left:  160px;
+	margin-bottom: 1000px;
+	width:  1010px; /*300px*/  
+	height: 300px; /*220px*/
+	
+}
+
+/*reminder buttons*/
+.btnr1{
+	padding: 10px 30px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 25px;
+}
+.btnr1:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+.btnr2{
+	padding: 10px 30px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 25px;
+}
+.btnr2:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+.btnr3{
+	padding: 10px 20px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 25px;
+}
+.btnr3:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+.btnr4{
+	padding: 10px 30px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 25px;
+}
+.btnr4:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+.btnr5{
+	padding: 10px 30px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 25px;
+}
+.btnr5:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+.btnr6{
+	padding: 10px 30px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 25px;
+}
+.btnr6:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+.btnr7{
+	padding: 10px 30px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 25px;
+}
+.btnr7:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+.btnr8{
+	padding: 10px 10px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 25px;
+}
+.btnr8:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+.btnr9{
+	padding: 10px 30px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 25px;
+}
+.btnr9:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+.btnr10{
+	padding: 10px 30px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 25px;
+}
+.btnr10:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+.btnr11{
+	padding: 10px 30px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 300px;
+}
+.btnr11:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+.btnr12{
+	padding: 10px 30px;  /* size of button*/
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	opacity: 2.0;
+	width: 170px;
+	text-align: center;
+	margin-left: 25px;
+}
+.btnr12:hover{
+	color: #D50000;
+    font-weight: bold;
+	line-height: 20px;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+	
+}
+
+
+
+
+a1:hover {
+    position: relative;
+
+}
+a1:hover:after {
+    content: url(images/mmls.png) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 20px; 
+    
+}
+
+a2:hover {
+    position: relative;
+}
+a2:hover:after {
+    content: url(images/camsys.png) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 20px;
+
+    
+}
+
+a3:hover {
+    position: relative;
+}
+a3:hover:after {
+    content: url(images/portal.png) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 20px; 
+    
+}
+
+///////////////////////////////////
+
+a4:hover {
+    position: relative;
+}
+a4:hover:after {
+    content: url(https://az616578.vo.msecnd.net/files/2016/12/03/636163435716629625-1211530131_drink%20your%20water.gif) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 500px; 
+    
+}
+
+a5:hover {
+    position: relative;
+}
+a5:hover:after {
+    content: url(images/eat.gif) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    right: -10px; 
+    
+}
+
+a6:hover {
+    position: relative;
+}
+a6:hover:after {
+    content: url(images/bills.gif) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 25px; 
+    
+}
+
+a7:hover {
+    position: relative;
+}
+a7:hover:after {
+    content: url(images/test.gif) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 20px; 
+    
+}
+
+a8:hover {
+    position: relative;
+}
+a8:hover:after {
+    content: url(images/assg.gif) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 20px; 
+    
+}
+
+a9:hover {
+    position: relative;
+}
+a9:hover:after {
+    content: url(https://img.buzzfeed.com/buzzfeed-static/static/2015-02/28/10/enhanced/webdr10/anigif_enhanced-18134-1425138111-12.gif) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 20px; 
+    
+}
+
+a10:hover {
+    position: relative;
+}
+a10:hover:after {
+    content: url(images/sleep.gif) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 20px; 
+    
+}
+
+a11:hover {
+    position: relative;
+}
+a11:hover:after {
+    content: url(https://s-media-cache-ak0.pinimg.com/originals/43/14/0e/43140eeb97c93622ae905c38b7bbdc51.jpg) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 100px; 
+    
+}
+
+a12:hover {
+    position: relative;
+}
+a12:hover:after {
+    content: url(http://cdn.lifebuzz.com/images/155534/lifebuzz-4247f88f7302bd2865a9353acc793545-original.gif) ; /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 20px; 
+    
+}
+
+
+
+
+
+
+
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-dropmenu {
+		display:block;
+	}
+}
+
+
+/***************************************************************END FOR MAINPAGE CSS CODE***********************************************************************/
+
+/* style code for contact.html */
+
+#page
+{
+    min-width:200px;
+    max-width:450px;
+    margin:auto;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 5px #bdc3c7;
+    padding:20px; /*all four paddings*/
+    border:4px solid #2c3e50;
+}
+
+#page div
+{
+    margin-top:20px;
+}
+
+#page input, textarea
+{
+    width:100%;
+	font-family: sans-serif;
+    border:2px solid #2ecc71;
+    padding:3px 5px; /* top&bottom 3px ... right&left 5px */
+}
+
+#page label
+{
+    font-weight:bold;
+    font-size:18px;
+    color:black;
+}
+
+
+
+.btn-submit{
+	font-weight:bold;
+	font-size:16px;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #2ECC71;
+	border-bottom: 4px solid #27AE60;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.btn-reset{
+	font-weight:bold;
+	font-size:16px;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #2ECC71;
+	border-bottom: 4px solid #27AE60;
+	margin-bottom: 20px;
+}
+
+.btn-submit:hover, .btn-reset:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+}
+
+/********************************************University Stuffs**********************************************************************************/
+#div4{                  
+	background-color: #29B59F;
+	position: absolute;
+	line-height: 50px;
+	border-radius: 15px;
+	opacity: 0.8;
+	filter: alpha (opacity=80);
+	text-align: center;
+	margin-left:  200px; /*changed from 500px to 100 px*/
+	margin-bottom: 1000px;
+	margin-top: 190px;
+	width: 330px;
+	height: 320px; /*changed from 220 to 300*/
+}
+
+#div4 h2{
+	color: black;
+	font-weight: bold;
+	font-size: 40px;
+
+}
+
+
+#div3 {
+	background-color: #29B59F;
+	position: absolute;
+	line-height: 50px;
+	border-radius: 15px;
+	opacity: 0.8;
+	filter: alpha (opacity=80);
+	text-align: center;
+	margin-left:  700px;
+	margin-bottom: 1000px;
+	margin-top: 190px;
+	width: 400px;
+	height: 420px; /*changed from 220 to 300*/
+}
+
+#div3 h2{
+	color: black;
+	font-weight: bold;
+	font-size: 40px;
+
+}
+
+/********************************************budget*****************************/
+#div5 {
+	background-color: #29B59F;
+	position: absolute;
+	line-height: 50px;
+	border-radius: 15px;
+	opacity: 0.8;
+	filter: alpha (opacity=80);
+	text-align: center;
+	margin-left:  475px;
+	margin-bottom: 1000px;
+	margin-top: 190px;
+	width: 400px;
+	height: 300px; /*changed from 220 to 300*/
+}
+
+#div5 h2{
+	color: black;
+	font-weight: bold;
+	font-size: 40px;
+
+}
+
+
+.btn-budget{
+	padding: 10px 30px; /* top&bottom 10px ... right&left 30px */
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #22313F;
+	border-bottom: 4px solid #fff;
+	margin-bottom: 20px;
+}
+
+.btn-budget:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #34495E;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+}
+
+/***************************************************************sign up*************************************/
+body.signup{
+	background: url("images/low_poly2.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#div8 h1{
+	color: black;
+	font-size: 55px;
+	margin-top: 10px;
+	float: right;
+	
+
+}
+
+#insert
+{
+    min-width:200px;
+    max-width:450px;
+    margin:auto;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 5px #bdc3c7;
+    padding:20px; /*all four paddings*/
+    border:4px solid #2c3e50;
+}
+
+#insert div
+{
+    margin-top:20px;
+}
+
+#insert input
+{
+    width:50%;
+	font-family: sans-serif;
+    border:2px solid #2ecc71;
+    padding:3px 5px; /* top&bottom 3px ... right&left 5px */
+}
+
+
+#insert label
+{
+    font-weight:bold;
+    font-size:18px;
+    color:black;
+}
+
+.btn-signup{
+	font-weight:bold;
+	font-size:16px;
+	color: #FFF;
+	border-radius: 4px;
+	border: none;
+	background-color: #2ECC71;
+	border-bottom: 4px solid #27AE60;
+	margin-top: 20px;
+	margin-left: 120px;
+	margin-bottom: 20px;
+}
+
+.btn-signup:hover{
+	color: #D50000;
+    font-weight: bold;
+	background-color: white;
+	border-color: #004D40;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+}
